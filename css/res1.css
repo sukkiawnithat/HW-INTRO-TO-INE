@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+}
+
+    /* style the body */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+    /* Header/logo tile */
+.header{
+    padding: 60;
+    text-align: center;
+    background: green;
+    color: white;
+}
+
+    /* style the top navigation bar */
+.navbar{
+    display: flex;
+    background-color: aqua;
+}
+
+  /* style the top navigation link */
+.navbar a{
+    color: aliceblue;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+    /*Chang color on hover*/
+.navbar a:hover{
+    background-color: antiquewhite;
+    color: black;
+}
+
+    /*Column container*/
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    /*Create two unequal columns that sites next to each other*/
+    /*Sidebar/left column*/
+.side{
+    flex: 30%;
+    background-color: azure;
+    padding: 20px;
+}
+
+    /*Main column*/
+.main{
+    flex: 70%;
+    background-color:aliceblue;
+    padding: 20px;
+}
+
+    /*Fake image, just for this example */
+.fakeimg{
+    background-color: bisque;
+    width: 100%;
+    padding: 20px;
+}
+
+    /*Footer*/
+.footer{
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+    /*Responsive layout - when the screen is less than 700px wide,
+    make the two column stack on of each other instead of next to each other*/
+@media screen and (max-width: 700px) {
+    .row, .navbar{
+        flex-direction: column;
+    }    
+}
